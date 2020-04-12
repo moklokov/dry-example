@@ -13,5 +13,6 @@ gem 'rom-sql'
 gem 'dotenv'
 
 group :development do
+  gem 'overcommit'
   gem 'rubocop', require: false
 end

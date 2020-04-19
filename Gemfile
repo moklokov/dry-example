@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 ruby '2.7.0'
 
+gem 'dry-auto_inject'
 gem 'dry-system'
 gem 'pg'
 gem 'rake'
@@ -15,4 +16,9 @@ gem 'dotenv'
 group :development do
   gem 'overcommit'
   gem 'rubocop', require: false
+end
+
+group :test do
+  gem 'database_cleaner-sequel'
+  gem 'rspec'
 end

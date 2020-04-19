@@ -68,9 +68,23 @@ GEM
       dry-equalizer (~> 0.2)
       dry-initializer (~> 3.0)
       dry-schema (~> 1.5)
+    hanami-controller (1.3.3)
+      hanami-utils (~> 1.3)
+      rack (~> 2.0)
+    hanami-router (1.3.2)
+      hanami-utils (~> 1.3)
+      http_router (= 0.11.2)
+      rack (~> 2.0)
+    hanami-utils (1.3.6)
+      concurrent-ruby (~> 1.0)
+      transproc (~> 1.0)
+    http_router (0.11.2)
+      rack (>= 1.0.0)
+      url_mount (~> 0.2.1)
     ice_nine (0.11.2)
     iniparse (1.5.0)
     jaro_winkler (1.5.4)
+    nio4r (2.5.2)
     overcommit (0.52.1)
       childprocess (>= 0.6.3, < 4)
       iniparse (~> 1.4)
@@ -78,6 +92,11 @@ GEM
     parser (2.7.1.0)
       ast (~> 2.4.0)
     pg (1.2.3)
+    puma (4.3.3)
+      nio4r (~> 2.0)
+    rack (2.2.2)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rainbow (3.0.0)
     rake (13.0.1)
     rexml (3.2.4)
@@ -134,6 +153,8 @@ GEM
     sequel (5.31.0)
     transproc (1.1.1)
     unicode-display_width (1.7.0)
+    url_mount (0.2.1)
+      rack
 
 PLATFORMS
   ruby
@@ -145,8 +166,12 @@ DEPENDENCIES
   dry-monads
   dry-system
   dry-validation
+  hanami-controller
+  hanami-router
   overcommit
   pg
+  puma
+  rack-test
   rake
   rom
   rom-sql

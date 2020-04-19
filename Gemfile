@@ -15,6 +15,11 @@ gem 'rom-sql'
 
 gem 'dotenv'
 
+gem 'hanami-controller'
+gem 'hanami-router'
+gem 'puma'
+gem 'rack-test'
+
 group :development do
   gem 'overcommit'
   gem 'rubocop', require: false

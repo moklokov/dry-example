@@ -6,6 +6,7 @@ ruby '2.7.0'
 
 gem 'dry-auto_inject'
 gem 'dry-system'
+gem 'dry-validation'
 gem 'pg'
 gem 'rake'
 gem 'rom'

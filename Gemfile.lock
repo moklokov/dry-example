@@ -99,7 +99,7 @@ GEM
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
     rake (13.0.1)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rom (5.2.2)
       rom-changeset (~> 5.2, >= 5.2.1)
       rom-core (~> 5.2, >= 5.2.2)
